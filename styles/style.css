@@ -112,11 +112,17 @@ p {
   flex-direction: column;
 }
 
+.card__heading {
+  text-decoration: none;
+}
+
 .card__title {
   font-size: 2.5rem;
   margin: 2rem 0;
   font-weight: 600;
   color: var(--white);
+
+  transition: color 0.5s;
 }
 
 .card__describe {
@@ -161,6 +167,12 @@ p {
 .card__name {
   color: var(--white);
   font-weight: 400;
+
+  transition: color 0.5s;
+}
+
+.card__web {
+  text-decoration: none;
 }
 
 /* attribution */
@@ -188,4 +200,12 @@ p {
   width: 5rem;
   height: 5rem;
   margin: 12rem auto;
+}
+
+.card__heading:hover .card__title {
+  color: var(--cyan);
+}
+
+.card__web:hover .card__name {
+  color: var(--cyan);
 }
