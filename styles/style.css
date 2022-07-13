@@ -1,0 +1,147 @@
+:root {
+  /* Primary Colors */
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /* Neutral */
+  --darkBlueMain: hsl(217, 54%, 11%);
+  --darkBlueCard: hsl(216, 50%, 16%);
+  --darkBlueLine: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  --blueShadow: hsl(215, 55%, 8%);
+
+  --primaryFont: "Outfit", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--primaryFont);
+  font-size: 1.8rem;
+  color: var(--softBlue);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  font-weight: 300;
+}
+
+[class$="flex--center"] {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+/* Card */
+.container {
+  padding: 5rem 0;
+  background-color: var(--darkBlueMain);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 33rem;
+  background-color: var(--darkBlueCard);
+
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+
+  box-shadow: 0px 0px 30px 20px rgba(9, 18, 31, 0.75);
+}
+
+.card__img {
+  /* 290x290 */
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.card__describe {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Card eth */
+.card__price {
+  color: var(--cyan);
+  font-weight: 400;
+}
+
+.card__ieth {
+  width: 1.2rem;
+}
+/* Card date */
+
+/* Card Creator */
+.card__creator {
+  border-top: solid 0.1rem var(--darkBlueLine);
+  column-gap: 1.5rem;
+}
+
+.card__avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 1.8rem 0 0;
+  border: solid 0.1rem var(--white);
+  border-radius: 100%;
+}
+
+.card__creation {
+  margin: 1.8rem 0 0;
+}
+
+.card__name {
+  color: var(--white);
+  font-weight: 400;
+}
+
+/* attribution */
+.attribution {
+  padding: 2rem 0;
+  background-color: var(--darkBlueMain);
+  color: var(--white);
+  text-align: center;
+}
+a {
+  color: var(--softBlue);
+}
